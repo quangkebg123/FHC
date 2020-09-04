@@ -10,42 +10,45 @@
 
 <body>
     <div id="main">
-        <header>
-            <div id="header_wrap">
-                <div id="image-wrap">
-                    <img src="./Financial-icon.png" alt="Logo" id="logo" />
+        <div id="container-header">
+            <header>
+                <div id="header_wrap">
+                    <div id="image-wrap">
+                        <img src="./Financial-icon.png" alt="Logo" id="logo" />
+                    </div>
                 </div>
+            </header>
+            <!-- Step Nav -->
+            <div class="container-step">
+                <ul class="progressbar">
+                    <li class="active">
+                        <div class="w3-border">
+                            <div class="w3-grey" style="height:5px;width:0%"></div>
+                        </div>
+                        <p class="text-step">Sức khỏe thanh toán</p>
+                    </li>
+                    <li id="step-tai-san">
+                        <div class="w3-border">
+                            <div class="w3-grey" style="height:5px;width:20%"></div>
+                        </div>
+                        <p class="text-step">Chất lượng tài sản</p>
+                    </li>
+                    <li>
+                        <div class="w3-border">
+                            <div class="w3-grey" style="height:5px;width:0%"></div>
+                        </div>
+                        <p class="text-step">Năng lức đầu tư</p>
+                    </li>
+                    <li>
+                        <div class="w3-border">
+                            <div class="w3-grey" style="height:5px;width:0%"> </div>
+                        </div>
+                        <p class="text-step">Kế hoạch của bạn</p>
+                    </li>
+                </ul>
             </div>
-        </header>
-        <!-- Step Nav -->
-        <div class="container-step">
-            <ul class="progressbar">
-                <li class="active">
-                    <div class="w3-border">
-                        <div class="w3-grey" style="height:5px;width:0%"></div>
-                    </div>
-                    <p class="text-step">Sức khỏe thanh toán</p>
-                </li>
-                <li id="step-tai-san">
-                    <div class="w3-border">
-                        <div class="w3-grey" style="height:5px;width:50%"></div>
-                    </div>
-                    <p class="text-step">Chất lượng tài sản</p>
-                </li>
-                <li>
-                    <div class="w3-border">
-                        <div class="w3-grey" style="height:5px;width:0%"></div>
-                    </div>
-                    <p class="text-step">Năng lức đầu tư</p>
-                </li>
-                <li>
-                    <div class="w3-border">
-                        <div class="w3-grey" style="height:5px;width:0%"> </div>
-                    </div>
-                    <p class="text-step">Kế hoạch của bạn</p>
-                </li>
-            </ul>
         </div>
+        
 
         <!-- Câu hỏi -->
         <div>
@@ -58,8 +61,9 @@
                             
                             <div class="button-wrap">
                                 <div class="check_image"> 
-                                    <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline" >
-                                    <label for="tab1" class="tich-radio"></label>
+                                    <label for="tab1" class="tich-radio">
+                                        <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline" >
+                                    </label>
                                 </div>
                                 <label for="tab1" class="ke">0</label>
                             </div>
@@ -70,8 +74,9 @@
                             <input type="radio" name="tabs" id="tab2" class="input_radio"/>
                             <div class="button-wrap">
                                 <div class="check_image">
-                                    <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline">
-                                    <label for="tab2" class="tich-radio"></label>
+                                    <label for="tab2" class="tich-radio">
+                                        <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline">
+                                    </label>
                                 </div>
                                 <label for="tab2" class="ke">1</label>
                             </div>
@@ -82,8 +87,9 @@
                             <input type="radio" name="tabs" id="tab3" class="input_radio"/>
                             <div class="button-wrap">
                                 <div class="check_image">
-                                    <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline">
-                                    <label for="tab3" class="tich-radio"></label>
+                                    <label for="tab3" class="tich-radio">
+                                        <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline">
+                                    </label>
                                 </div>
                                 <label for="tab3" class="ke">2</label>
                             </div>
@@ -94,16 +100,18 @@
                             <input type="radio" name="tabs" id="tab4" class="input_radio"/>
                             <div class="button-wrap">
                                 <div class="check_image">
-                                    <img src="./check_baseline.png" alt="Girl in a jacket" width="24" height="18" class="check-baseline">
-                                    <label for="tab4" class="tich-radio"></label>
+                                    <label for="tab4" class="tich-radio">
+                                        <img src="./check_baseline.png" alt="Girl in a jacket" width="24" height="18" class="check-baseline">
+                                    </label>
                                 </div>
-                                <label for="tab4" class="ke">>=3</label>
+                                <label for="tab4" class="ke">>= 3</label>
                             </div>
                            
                         </div>
                     
 
                     </div>
+                    <button class="button-continue">Tiếp tục</button>
                 </div>
 
                 <div class="wrap-question" style="margin-top:30px">
