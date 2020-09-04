@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <div id="header_wrap">
+                <div id="image-wrap">
+                    <img src="./Financial-icon.png" alt="Logo" id="logo" />
+                </div>
+            </div>
+        </header>
+        <!-- Step Nav -->
+        <div class="container-step">
+            <ul class="progressbar">
+                <li class="active">
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:5px;width:0%"></div>
+                    </div>
+                    <p class="text-step">Sức khỏe thanh toán</p>
+                </li>
+                <li id="step-tai-san">
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:5px;width:50%"></div>
+                    </div>
+                    <p class="text-step">Chất lượng tài sản</p>
+                </li>
+                <li>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:5px;width:0%"></div>
+                    </div>
+                    <p class="text-step">Năng lức đầu tư</p>
+                </li>
+                <li>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:5px;width:0%"> </div>
+                    </div>
+                    <p class="text-step">Kế hoạch của bạn</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Câu hỏi -->
+        <div>
+            <div id="content">
+                <div class="wrap-question">
+                    <p class="text-question">Bạn có mấy người phụ thuộc tài chính?</p>
+                    <div class="radio-question">
+                        <div>
+                            <input type="radio" name="tabs" id="tab1"  class="input_radio" checked/>
+                            
+                            <div class="button-wrap">
+                                <div class="check_image"> 
+                                    <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline" >
+                                    <label for="tab1" class="tich-radio"></label>
+                                </div>
+                                <label for="tab1" class="ke">0</label>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="tabs" id="tab2" class="input_radio"/>
+                            <div class="button-wrap">
+                                <div class="check_image">
+                                    <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline">
+                                    <label for="tab2" class="tich-radio"></label>
+                                </div>
+                                <label for="tab2" class="ke">1</label>
+                            </div>
+                            
+                        </div>    
+                        
+                        <div>
+                            <input type="radio" name="tabs" id="tab3" class="input_radio"/>
+                            <div class="button-wrap">
+                                <div class="check_image">
+                                    <img src="./check_baseline.png" alt="step-logo" width="24" height="18" class="check-baseline">
+                                    <label for="tab3" class="tich-radio"></label>
+                                </div>
+                                <label for="tab3" class="ke">2</label>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="tabs" id="tab4" class="input_radio"/>
+                            <div class="button-wrap">
+                                <div class="check_image">
+                                    <img src="./check_baseline.png" alt="Girl in a jacket" width="24" height="18" class="check-baseline">
+                                    <label for="tab4" class="tich-radio"></label>
+                                </div>
+                                <label for="tab4" class="ke">>=3</label>
+                            </div>
+                           
+                        </div>
+                    
+
+                    </div>
+                </div>
+
+                <div class="wrap-question" style="margin-top:30px">
+                    <p class="text-question">Chi tiêu hàng tháng hiện tại của bạn:</p>
+                    <p class="note">Thông tin thu nhập rất cần thiết để đánh giá sức khỏe tài chính. Thông tin càng
+                        chính xác, giải pháp đưa ra cho bạn càng phù hợp.</p>
+                    <div class="wrap-input">
+                        <div class="content-input">
+                            <p class="text-input">THU NHẬP THỤ ĐỘNG:</p>
+                            <div class="wrap-type-input">
+                                <span class="label-input">Thu nhập ổn định từ công việc</span>
+                                <input 
+                                    list='onDinh' 
+                                    class="input"
+                                    name="thu_dong" 
+                                    placeholder="15,000,000" id="thu_dong"
+                                    onkeyup="myFunction('thu_dong')"
+                                    onchange="handleSelected('thu_dong')"
+                                    onfocus="handleFocus('thu_dong')"
+                                
+                                />
+                                <datalist id='onDinh' name="thu_dong">
+                                    <option ></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                </datalist>
+                            </div>
+
+                            <div class="wrap-type-input">
+                                <span class="label-input">Thu nhập kinh doanh riêng</span>
+                                <input 
+                                    list='kinhDoanh' 
+                                    id="kinh_doanh" 
+                                    class="input" 
+                                    name="kinh_doanh" 
+                                    placeholder="20,000,000"
+                                    onkeyup="myFunction('kinh_doanh')" 
+                                    onchange="handleSelected('kinh_doanh')"
+                            
+                                />
+                                <datalist id='kinhDoanh' name="kinh_doanh">
+                                    <option ></option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                </datalist>
+                            </div>
+
+                            <div class="wrap-type-input">
+                                <span class="label-input">Thu nhập chủ động khác</span>
+                                <input  class="input" placeholder="1,234,000" />
+                             
+                            </div>
+
+                        </div>
+
+                        <div class="content-input">
+                            <p class="text-input">THU NHẬP BỊ ĐỘNG:</p>
+
+                            <div class="wrap-type-input" style="position: relative;">
+                                <span class="label-input">Thu nhập từ hoạt động đầu tư</span>
+                                <img src="./tooltip.png" alt="Logo" id="logo-tooltip" />
+                                <input class="input" placeholder="15,000,000" />
+                            </div>
+
+                            <div class="wrap-type-input">
+                                <span class="label-input">Thu nhập từ BĐS cho thuê</span>
+                                <input class="input" placeholder="20,000,000" />
+                            </div>
+
+                            <div class="wrap-type-input">
+                                <span class="label-input">Thu nhập thu động khác</span>
+                                <input class="input" placeholder="0" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button-continue">Tiếp tục</button>
+                </div>
+
+                <div class="wrap-question" style="margin-top:30px">
+                    <div style="margin-bottom:20px">
+                        <p class="text-question">Chi tiêu hàng tháng hiện tại của bạn:</p>
+                        <p class="note">Chúng tôi sẽ đánh giá liệu bạn có gặp rủi ro nào dựa trên thói quen chi tiêu
+                            hiện tại không.</p>
+                    </div>
+
+                    <div class="wrap-chitieu">
+                        <div class="wrap-type-input">
+                            <span class="label-input">Chi phí sinh hoạt (ăn uống, nhà ở, điện nước…)</span>
+                            <input class="input" placeholder="6,700,000" />
+                        </div>
+                    </div>
+
+                    <div class="wrap-chitieu">
+                        <div class="wrap-type-input">
+                            <span class="label-input">Trả nợ định kỳ (vay mua nhà, ô tô…)</span>
+                            <input class="input" placeholder="3,000,000" />
+                        </div>
+                    </div>
+
+                    <div class="wrap-chitieu">
+                        <div class="wrap-type-input">
+                            <span class="label-input">Đóng bảo hiểm</span>
+                            <input class="input" placeholder="3,000,000" />
+                        </div>
+                    </div>
+
+                    <div class="wrap-chitieu">
+                        <div class="wrap-type-input">
+                            <span class="label-input">Đóng bảo hiểm</span>
+                            <input class="input" placeholder="0" />
+                        </div>
+                    </div>
+
+                    <div class="wrap-chitieu">
+                        <div class="wrap-type-input">
+                            <span class="label-input">Để dành cho tuổi già</span>
+                            <input class="input" placeholder="1,200,200" />
+                        </div>
+                    </div>
+
+                    <div class="wrap-chitieu">
+                        <div class="wrap-type-input">
+                            <span class="label-input">Tiết kiệm</span>
+                            <input class="input" placeholder="1,000,000" />
+                        </div>
+                    </div>
+
+                    <button class="button-continue">Tiếp tục</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    const numbers = [1000000, 10000000, 100000000, 1000000000]
+    const inputs = document.querySelectorAll('input')
+
+    inputs.forEach(input => {
+        input.addEventListener('keypress', function(e){
+            const { list : { options } } = input    
+            if(e.keyCode == 13 && options.length > 0) input.value = options[0].value.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') //Taking the first
+            
+        })
+    })
+
+    function myFunction(name) {
+      
+        const input_active = document.getElementById(name)
+        const { value, list } = input_active
+        const { length } = value
+        console.log(list.options,'list')
+        if (Number(value)) {
+
+            if (length < 10) {
+
+                const goi_y = numbers.map(number => `${value * number / Math.pow(10, length - 1)}`)
+                console.log(goi_y, 'chay')
+                const options = Object.values(list.options).map((ele, index) => {
+                    ele.value = goi_y[index]
+                    ele.innerText = goi_y[index].replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+                })
+            }
+
+        }
+    }
+
+    function handleSelected(name) {
+        const input_selected = document.getElementById(name)
+        input_selected.value =  input_selected.value.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+    }
+
+    function handleFocus(name) {
+        const input_selected = document.getElementById(name)
+        input_selected.value =  input_selected.value.replace(/\$\s?|(,*)/g, "")
+    
+    }
+
+
+    
+
+
+
+</script>
+
+</html>
